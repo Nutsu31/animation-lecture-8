@@ -40,7 +40,11 @@ html, body {
 
 }
 
-.deck:hover .card:nth-child(1) {
+/* vici aq vimeoreb transition ebs magram sxvanairad ver gavakete mokled 
+rom chavwero da gaketdes yvelaze */
+
+.deck:hover .card:nth-child(1), 
+.card:nth-child(1):hover {
     transform:rotate(-20deg);
     transition: 0.5s ease;
     
@@ -48,42 +52,42 @@ html, body {
 
 .deck:hover .card:nth-child(1):hover {
     transform:scale(1.2,1.2) rotate(-20deg);
-    transition: 0.5s ease;
 }
 
-.deck:hover .card:nth-child(2) {
+.deck:hover .card:nth-child(2), 
+.card:nth-child(2):hover  {
     transform:rotate(-10deg);
     transition: 0.5s ease;
 }
 
 .deck:hover .card:nth-child(2):hover {
     transform:scale(1.2,1.2) rotate(-10deg);
-    transition: 0.5s ease;
 }
 
-.deck:hover .card:nth-child(3) {
+.deck:hover .card:nth-child(3),
+.card:nth-child(3):hover {
     transform:rotate(0deg);
     transition: 0.5s ease;
 }
 .deck:hover .card:nth-child(3):hover {
     transform:scale(1.2,1.2) rotate(0deg);
-    transition: 0.5s ease;
 }
 
-.deck:hover .card:nth-child(4) {
+.deck:hover .card:nth-child(4), 
+.card:nth-child(4):hover {
     transform:rotate(10deg);
     transition: 0.5s ease;
 }
 .deck:hover .card:nth-child(4):hover {
     transform:scale(1.2,1.2) rotate(10deg);
-    transition: 0.5s ease;
+
 }
 
-.deck:hover .card:nth-child(5) {
+.deck:hover .card:nth-child(5),
+.card:nth-child(5):hover {
     transform:rotate(20deg);
     transition: 0.5s ease;
 }
 .deck:hover .card:nth-child(5):hover {
     transform:scale(1.2,1.2) rotate(20deg);
-    transition: 0.5s ease;
 }

@@ -1,4 +1,4 @@
-var el = document.querySelector(".box");
+let el = document.querySelector(".box");
 
 
 el.addEventListener("click", clickedBox, false);

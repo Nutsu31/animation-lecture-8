@@ -20,7 +20,7 @@
     font-size:24pt;
     }
 
-    div#main .topleft {
+    div#main .topleft, .topright, .bottomleft, .bottomright {
     display: inline-block;
     position: absolute;
     width: 100px;
@@ -33,62 +33,41 @@
 }
 
 div#main .topright {
-    display: inline-block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 0px;
     left: 100px;
     background: yellow;
-    transition: 1s;
     
 }
 
 div#main .bottomleft {
-    display: inline-block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 0px;
     top: 100px;
     background: blue;
-    transition: 1s;
     
     
 }
 
 div#main .bottomright {
-    display: inline-block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
     left: 100px;
     top: 100px;
     background: green;
-    transition: 1s;
 
     }
 
-div#main:hover .topleft {
+div#main:hover .topleft, div#main:hover .bottomright {
     transform: rotate(90deg);
     transform-origin: left top;
     transition: 1s ease;
     transform: linear;
 }
-div#main:hover .topright {
+div#main:hover .topright ,div#main:hover .bottomleft {
     transform: rotate(-90deg);
     transform-origin: right top;
     transition: 1s ease;
     
 }
 div#main:hover .bottomleft {
-    transform: rotate(-90deg);
     transform-origin: left bottom;
-    transition: 1s ease;
 }
 
 div#main:hover .bottomright {
-    transform: rotate(90deg);
     transform-origin: right bottom;
-    transition: 1s ease; 
 }
